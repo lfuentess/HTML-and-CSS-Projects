@@ -7,24 +7,20 @@
         <meta name="keywords" content="HTML, CSS">
         <meta name="author" content="L.Fuentes">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            img {
-                width: 450px;
-                height: 490px;
-                border: 1px solid blue;
-                margin: 10px;
-            }
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" type="" href="css/style.css">
 
-        </style>
     </head>
     <body>
         <!-- NAVBAR-->
-         <nav>
-            <ul>
+         <nav class="nav-bar">
+            <ul id="nav-border">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
-            <h2>Choose a Pet!</h2>
             <ul>
                 <a href="#cat"><li>Cat & Kittens</li></a>
                 <a href="#dog"><li>Dogs & Puppies</li></a>
@@ -38,47 +34,65 @@
          <!--header-->
          <header>
             <div>
-                <h1>Welcome to The Best Pet Shop</h1>
+                <h1 class="animate-text">Welcome to The Best Pet Shop</h1>
                 <blockquote cite="https://www.goodreads.com/quotes/19168-dogs-are-not-our-whole-life-but-they-make-our">
                     "Dogs are not our whole life, but they make our lives whole."<br>
                     - Roger Caras
                 </blockquote>
+                <h2>Choose a Pet!</h2>
             </div>
          </header>
          <!--PET IMAGES-->
          <section>
-            <div>
-                
+            <div class="container">
                 <div class="cells_img">
                     <!-- CAT IMAGE-->
-                     <div id="cat">
-                        <h3>Cats & Kittens</h3>
-                        <img src="images/cat.jpg" alt="Picture of kittens">
+                     <div id="cat" class="column">
+                        <div class="image-container">
+                            <h3>Cats & Kittens</h3>
+                            <img src="images/cat.jpg" alt="Picture of kittens">
+                            <div class="overlay"></div>
+                        </div>
                      </div>
                     <!-- DOG IMAGE-->
-                    <div id="dog">
-                        <h3>Dogs & Puppies</h3>
-                        <img src="images/dog.jpg" alt="Picture of dogs">
+                    <div id="dog" class="column">
+                        <div class="image-container">
+                            <h3>Dogs & Puppies</h3>
+                            <img src="images/dog.jpg" alt="Picture of dogs">
+                            <div class="overlay"></div>
+                        </div>
                     </div>
                     <!-- RABBITS IMAGE-->
-                    <div id="rabbit">
-                        <h3>Rabbits</h3>
-                        <img src="images/rabbits.jpg" alt="Picture of rabbits">
+                    <div id="rabbit" class="column">
+                        <div class="image-container">
+                            <h3>Rabbits</h3>
+                            <img src="images/rabbits.jpg" alt="Picture of rabbits">
+                            <div class="overlay"></div>
+                        </div>
                     </div>
                     <!--GUINEA PIG IMAGE-->
-                    <div id="guineapig">
-                        <h3>Guinea Pig</h3>
-                        <img src="images/guineapigs.jpg" alt="Picture of guineapigs">
+                    <div id="guineapig" class="column">
+                        <div class="image-container">
+                            <h3>Guinea Pig</h3>
+                            <img src="images/guineapigs.jpg" alt="Picture of guineapigs">
+                            <div class="overlay"></div>
+                        </div>
                     </div>
                     <!-- FISH IMAGE-->
-                    <div id="fish">
-                        <h3>Fish</h3>
-                        <img src="images/fish.jpg" alt="Picture of dogs">
+                    <div id="fish" class="column">
+                        <div class="image-container">
+                            <h3>Fish</h3>
+                            <img src="images/fish.jpg" alt="Picture of dogs">
+                            <div class="overlay"></div>
+                        </div>
                     </div>
                     <!-- REPTILE IMAGE-->
-                    <div id="reptile">
+                    <div id="reptile" class="column">
+                        <div class="image-container">
                         <h3>Reptiles</h3>
                         <img src="images/beardedDragon.jpg" alt="Picture of bearded Dragon">
+                        <div class="overlay"></div>
+                        </div>
                     </div>
 
                 </div>
@@ -88,31 +102,13 @@
          <section>
             <!--DOG VIDEO-->
 
-            <div id="video">
+            <div id="video" class="container">
                 <h3>Videos</h3>
                 <iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
             </div>
         
          </section>
-         <!--FORM-->
-         <section>
-            <div>
-                <h3>Please provide your contact information and a brief message of your inquiry.</h3>
-                <div>
-                    <form>
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name"><br>
-                        <input type="email" placeholder="Email"><br>
-                        <input type="tel" placeholder="Phone Number"><br>
-                        <input type="checkbox" id="Newsletter">
-                        <label for="Newsletter">Would you like to receive our monthly newsletter?</label><br>
-                        <textarea placeholder="Type message here..."></textarea><br>
-                        <input type="submit" value="submit">
 
-                    </form>
-                </div>
-            </div>
-         </section>
          <!--Footer-->
          <footer>
             <table>
