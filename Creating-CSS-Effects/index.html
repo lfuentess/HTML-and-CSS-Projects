@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating Effects with CSS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="css/style.css"
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="drop">
+                    <a href="#">Images</a>
+                    <div class="rollover-menu">
+                        <a href="#image1">Image 1</a>
+                        <a href="#image2">Image 2</a>
+                        <a href="#image3">Image 3</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!--images-->
+        <section>
+            <!--images one-->
+            <div class="image-row">
+                <div class="side-text">
+                    <h1>Fuji Moutain &nbsp;</h1>
+                    <p>Japan</p>                
+                </div>  
+                <div id="image1" class="image-container ">
+                    <img src="images/japan_one.jpg">
+                    <div class="overlay"></div>
+                    <div class="side-text overlay2">Japan</div>
+                </div>
+            </div>
+            <!--images two-->
+            <div class="image-row">
+                <div class="side-text">
+                        <h1>The Bridge&nbsp;</h1>
+                        <p>Japan</p>
+                </div>
+                <div id="image2" class="image-container">
+                    <img src="images/japan_two.jpg" class="zoom">
+                    <div class="overlay"></div>
+                    <div class="side-text overlay2">Japan</div>
+                </div>
+            </div>
+            <!--images three-->
+            <div class="image-row">
+                <div class="side-text">
+                    <h1>Small Building&nbsp;</h1>
+                    <p>Japan</p>            
+                </div>
+                <div id="image3" class="image-container">
+                    <div class="circle">
+                        <img src="images/japan_three.png">
+                        <div class="side-text overlay2">Japan</div>
+                    </div>
+                </div>            
+            </div>
+        </section>
+        <!--FOOTER-->
+        <footer>
+            <div class="footer-text">
+                <p>The Tech Academy &copy;</p>
+            </div>
+        </footer>
+    </body>
+</html>
