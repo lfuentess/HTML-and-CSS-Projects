@@ -256,6 +256,7 @@ overflow of the shape size going beyond the edges of images 3*/
   opacity:0;
   color: white;
   font-size: 20px;
+  font-family: "Sofia", sans-serif;
   text-align: center;
 }
 
