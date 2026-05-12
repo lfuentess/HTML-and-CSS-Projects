@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;/*Prevent the browser from 
     displaying a left to right scroll bar as a result 
     of negative margin values*/
-    margin: 0; /* Asegúrate de que no haya márgenes extraños */
+    margin: 0; 
 }
 /*navbar*/
 .nav-bar{
