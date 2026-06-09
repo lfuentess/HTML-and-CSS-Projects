@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
         <link rel="stylesheet" type="text/css" href="css/one_page_website.css">
+        <script src="JS/one_page_website.js" defer></script>
     </head>
     <body>
 
@@ -16,74 +17,174 @@
         <h4>Choose your car favorite</h4>-->
         <nav class="nav-bar">
             <ul id="menu">
-                <li><a href="#home">Home</a></li>
-                <li class="drop"><a href="#cars">Cars</a>
-                    <div class="rollover-menu">
-                        <a href="#spirit007">Lotus Spirit</a>
-                        <a href="#batimovil">Batmobile</a>
-                        <a href="#delorean">Delorean</a>
-                        <a href="#mach5">Mach 5</a>
-                        <a href="#knightrider">Knight Rider</a>
-                        <a href="#videocars">Famous Cars</a>
-                    </div>
-                </li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" onclick="show_display(0)">Home</a></li>
+                <li class="drop" onclick="show_display(1)"><a href="#videocars">Famous Cars Video</a></li>
+                <li><a href="#contact" onclick="show_display(2)">Contact</a></li>
             </ul>
         </nav>
         <!--Header-->
         <header>
-            <div id="home">
-                <h1 >
-                    Welcome to The Famous Cars of movies and series
-                </h1>
-            </div>
+            <div id="home"><h1 >Welcome to The Famous Cars of movies and series</h1></div>
         </header>
         <!--CARS IMAGES-->
         <section>
-            <div>
-                <div id="batimovil" class="formats">
+        <div id="thumbnails" class="row">
+            <div class="column_0">
+                <img src="images/1960s_Batmobile (S).jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column_0">
+                <img src="images/batimovil (S).jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column_0">
+                <img src="images/lotus-esprit-007 (S).jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column_0">
+                <img src="images/lotus-esprit-turbo-white (S).jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column_0">
+                <img src="images/delorean_btf (S).jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+            <div class="column_0">
+                <img src="images/delorean_btf_1 (S).jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+            </div>
+            <div class="column_0">
+                <img src="images/mach5 (S).jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+            </div>
+            <div class="column_0">
+                <img src="images/mach5_1 (S).jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+            <div class="column_0">
+                <img src="images/knight_rider (S).jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+            </div>
+            <div class="column_0">
+                <img src="images/knight_rider_1 (S).jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+            </div>            
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 10</div>
+                    <div class="textdescr">1955 Ford Lincoln Futura <br>The Batmobile <br> 1960s <br> Series</div>
+                    <img src="images/1960s_Batmobile.jpg" class="autoM">
                     
-                    <div>
-                        <img src="images/1960s_Batmobile.jpg" alt="Picture Batmovile 1">
-                        <img src="images/batimovil.jpg" alt="Picture Batmovile 2">
-                    </div>
-                    <h3>The Batmobile - 1960s Series</h3>
                 </div>
-                <div id="delorean" class="formats">
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 10</div>
+                    <div class="textdescr">1955 Ford Lincoln Futura <br>The Batmobile <br> 1960s <br> Series</div>
+                    <img src="images/batimovil.jpg" class="autoM">
                     
-                    <div>
-                        <img src="images/delorean_btf.jpg" alt="Picture Delorean 1">
-                        <img src="images/delorean_btf_1.jpg" alt="Picture Delorean 2">
-                    </div>
-                    <h3>The Delorean - Back To Future - Movie</h3>
                 </div>
-                <div id="spirit007" class="formats">
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 10</div>
+                    <div class="textdescr">Lotus Spirit <br> The Spy Who Loved Me <br> 007 Car  <br> 1977 film</div>
+                    <img src="images/lotus-esprit-007.jpg" class="autoM">
                     
-                    <div>
-                        <img src="images/lotus-esprit-007.jpg" alt="Picture Lotus Spirit 1">
-                        <img src="images/lotus-esprit-turbo-white.jpg" alt="Picture  Lotus Spirit 2">
-                    </div>
-                    <h3>Lotus Spirit - Car 007 - Movie</h3>
                 </div>
-                <div id="mach5" class="formats">
-                    <br>
-                    <div>
-                        <img src="images/mach5.jpg" alt="Picture Mach 5 (1)">
-                        <img src="images/mach5_1.jpg" alt="Picture  Mach 5 (2)">
-                    </div>
-                    <h3>Mach 5 - Speed Racer - Series</h3>
-                </div>
-                <div id="knightrider" class="formats">
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 10</div>
+                    <div class="textdescr">Lotus Spirit <br> The Spy Who Loved Me <br> 007 Car  <br> 1977 film </div>
+                    <img src="images/lotus-esprit-turbo-white.jpg" class="autoM">
                     
-                    <div>
-                        <img src="images/knight_rider.jpg" alt="Picture Knight Rider 1">
-                        <img src="images/knight_rider_1.jpg" alt="Picture  Knight Rider 2">
-                    </div>
-                    <h3>Knight Rider - Movie</h3>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 10</div>
+                    <div class="textdescr">The Delorean <br> Back To Future I,II, III<br> 1985,1989, 1990 Movies</div>
+                    <img src="images/delorean_btf.jpg" class="autoM">
+                    
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 10</div>
+                    <div class="textdescr">The Delorean <br> Back To Future I,II, III<br> 1985,1989, 1990 Movies</div>
+                    <img src="images/delorean_btf_1.jpg" class="autoM">
+                    
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 10</div>
+                    <div class="textdescr">Mach 5 <br> Speed Racer <br>the 1966 manga series</div>
+                    <img src="images/mach5.jpg" class="autoM">
+                    
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 10</div>
+                    <div class="textdescr">Mach 5 <br> Speed Racer <br>the 1966 manga series</div>
+                    <img src="images/mach5_1.jpg" class="autoM">
+                    
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 10</div>
+                    <div class="textdescr">Pontiac Firebird Trans Am <br> KITT's <br> Knight Rider <br>1982 Series </div>
+                    <img src="images/knight_rider.jpg" class="autoM">
+                    
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 10</div>
+                    <div class="textdescr">Pontiac Firebird Trans Am <br> KITT's <br> Knight Rider <br>1982 Series </div>
+                    <img src="images/knight_rider_1.jpg" class="autoM">
+                    
+                </div>
+
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="images/1960s_Batmobile (S).jpg" onclick="currentSlide(1)" alt="Batmobile">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/batimovil (S).jpg" onclick="currentSlide(2)" alt="Batmobile">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/lotus-esprit-007 (S).jpg" onclick="currentSlide(3)" alt="Lotus Spirit">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/lotus-esprit-turbo-white (S).jpg" onclick="currentSlide(4)" alt="Lotus Spirit">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/delorean_btf (S).jpg" onclick="currentSlide(5)" alt="Delorean">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/delorean_btf_1 (S).jpg" onclick="currentSlide(6)" alt="Delorean">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/mach5 (S).jpg" onclick="currentSlide(7)" alt="Mach 5">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/mach5_1 (S).jpg" onclick="currentSlide(8)" alt="Mach 5">
+                </div>
+                            <div class="column">
+                    <img class="demo" src="images/knight_rider (S).jpg" onclick="currentSlide(9)" alt="Knight Rider">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/knight_rider_1 (S).jpg" onclick="currentSlide(10)" alt="Knight Rider">
                 </div>
             </div>
+        </div>
         </section>
-        <!--Video-->
+<!--Video-->
         <section>
             <div id="videocars" class="formats">
                 <iframe src="https://www.youtube.com/embed/DvqJ30NTBB0" width="800" height="500"></iframe>
@@ -92,7 +193,7 @@
         </section>
         <!--Form Contact-->
         <section>
-            <div id="contact" ></div>
+            <div id="contact" >
                 <h2>Please provide your contact information and <br>a brief description of your favorite car, I will find it and post it.</h2>
                 <form >
                     <input type="text" class="box-input" placeholder="Nick name"><br>
@@ -104,7 +205,7 @@
                     <input type="submit" class="box-input bttn-submit" value="submit">
                 </form>
             </div>
-        </section>
+        </section>        
         <!--Footer-->
         <footer>
             <table>
