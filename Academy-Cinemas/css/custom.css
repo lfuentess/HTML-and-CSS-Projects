@@ -133,6 +133,11 @@ h1{
     text-align: center;
     font-size: 100px;
 }
+/*Adjust to modal-title */
+h1.modal-title{
+    color: black;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
 
 h3{
     font-family: var(--main-font-family);
@@ -154,6 +159,9 @@ b{
 
 img{
    border-radius: 5px; 
+}
+.img-fluid{
+    height: 100%;
 }
 /* MOVIE CARDS*/
 
@@ -177,8 +185,8 @@ img{
 }
 /*BUTTONS*/
 /*Creates the main styling for buttons that contain the Bootstrap .btn class*/
-
-.btn{
+/* change name class to no affect all buttons on the page*/
+.btn0{
     background-color: var(--main-color);
     border-radius: 20px;
     margin-top: 5px;
@@ -189,7 +197,7 @@ img{
     font-size: 18px;
 }
 
-.btn:focus, .btn:hover{
+.btn0:focus, .btn0:hover{
     border-color: transparent;
     background-color: var(--main-color);
     color: var(--accent-text-color);
@@ -212,6 +220,12 @@ contact form section*/
     color: var(--accent-text-color);
 }
 
+h1 .container {
+    color:#fff;
+    font-family: roboto;
+    font-weight: 900;
+    text-transform: uppercase;
+}
 /*TICKET CARDS*/
 
 /*Specifically styles the cards class within the element
@@ -294,4 +308,8 @@ selector styling*/
 .footer-img{
     width: auto;
     height: 130px;
+}
+
+.email{
+    width: 100%;
 }

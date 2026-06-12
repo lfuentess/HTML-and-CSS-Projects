@@ -84,7 +84,7 @@
         <h1>Now Playing</h1>
         <!--BEN HUR-->
         <div class="d-flex flex-row flex-wrap spacer" id="ben-hur">
-          <div class="col-lg-5 mx-auto">
+          <div class="card col-lg-5 mx-auto">
             <img
               src="images/ben-hur.jpg"
               class="img-fluid"
@@ -110,16 +110,16 @@
               <h4 class="card-title"><strong>Show Times</strong></h4>
               <div class="row">
                 <div class="col">
-                  <a class="btn" href="#tickets" role="button">10:00 AM</a>
-                  <a class="btn" href="#tickets" role="button">11:30 AM</a>
-                  <a class="btn" href="#tickets" role="button">1:10 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">10:00 AM</a>
+                  <a class="btn btn0" href="#tickets" role="button">11:30 AM</a>
+                  <a class="btn btn0" href="#tickets" role="button">1:10 PM</a>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <a class="btn" href="#tickets" role="button">2:30 PM</a>
-                  <a class="btn" href="#tickets" role="button">4:50 PM</a>
-                  <a class="btn" href="#tickets" role="button">8:00 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">2:30 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">4:50 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">8:00 PM</a>
                 </div>
               </div>
             </div>
@@ -146,16 +146,16 @@
               <h4 class="card-title"><strong>Show Times</strong></h4>
               <div class="row">
                 <div class="col">
-                  <a class="btn" href="#tickets" role="button">10:00 AM</a>
-                  <a class="btn" href="#tickets" role="button">11:30 AM</a>
-                  <a class="btn" href="#tickets" role="button">1:10 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">10:00 AM</a>
+                  <a class="btn btn0" href="#tickets" role="button">11:30 AM</a>
+                  <a class="btn btn0" href="#tickets" role="button">1:10 PM</a>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <a class="btn" href="#tickets" role="button">2:30 PM</a>
-                  <a class="btn" href="#tickets" role="button">4:50 PM</a>
-                  <a class="btn" href="#tickets" role="button">8:00 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">2:30 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">4:50 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">8:00 PM</a>
                 </div>
               </div>
             </div>
@@ -197,16 +197,16 @@
               <h4 class="card-title"><strong>Show Times</strong></h4>
               <div class="row">
                 <div class="col">
-                  <a class="btn" href="#tickets" role="button">10:00 AM</a>
-                  <a class="btn" href="#tickets" role="button">11:30 AM</a>
-                  <a class="btn" href="#tickets" role="button">1:10 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">10:00 AM</a>
+                  <a class="btn btn0" href="#tickets" role="button">11:30 AM</a>
+                  <a class="btn btn0" href="#tickets" role="button">1:10 PM</a>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <a class="btn" href="#tickets" role="button">2:30 PM</a>
-                  <a class="btn" href="#tickets" role="button">4:50 PM</a>
-                  <a class="btn" href="#tickets" role="button">8:00 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">2:30 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">4:50 PM</a>
+                  <a class="btn btn0" href="#tickets" role="button">8:00 PM</a>
                 </div>
               </div>
             </div>
@@ -267,7 +267,71 @@
         </div>
       </div>
     </section>
-    <!--CONTACT FORM-->
+        <section>
+      <!-- jumbotron heading -->
+       <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+        <div class="container">
+          <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family: roboto;font-weight: 900;text-transform: uppercase;"> Movie Deals</h1>
+          <p class="display-4">Check out our monthly deals...</p>
+          <!--movie deals -->
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#register">See our monthly movie deals!</button>
+          <!-- /movie deals-->
+        </div>
+       </div>
+      <!-- /jumbotron heading-->
+      <!-- signup form -->
+       <div class="row">
+          <div class="container text-center col-md-6" id="deals">
+            <div class="container text-center">
+              <h1 class="display-5 my-4 col-lg-auto text-primary">Stay current on movies!</h1>
+              <div class="input-group mb-5 input-group-sm">
+                <input type="text" class="form-control email" id="Email0" placeholder="Email">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-info" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Submit your email to receive great movie reward deals!">
+                      Sign up
+                    </button>
+                </span>
+              </div>
+            </div>
+          </div>
+       </div>
+      <!-- /signup form -->
+      <!-- form modal-->
+      <div class="modal fade" id="register" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="ModalLabel">Register to receive movie deals...</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="firstname" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="First Name..." />
+              </div>
+              <div class="mb-3">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input class="form-control" type="text" id="lastname"  placeholder="Last Name..." />
+              </div>
+              <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input class="form-control email" type="email" id="Email"  placeholder="Email..." />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control form-control-sm" row="3" id="message" placeholder="Type Message Here..."></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /form modal-->
+    </section>  
+    <!--CONTACT FORM
     <section>
       <div class="container" id="contact">
         <h1>Contact Us!</h1>
@@ -293,7 +357,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     <!--FOOTER
     <section>
       <div class="container-fluid">
@@ -346,5 +410,11 @@
         </div>
       </div>
     </section>
+        <script>
+      // active popover method
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+      // /active popover method
+    </script>
   </body>
 </html>
