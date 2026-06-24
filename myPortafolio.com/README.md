@@ -10,4 +10,7 @@ Images and video from PIXABAY
 - video presentation
 - Style CSS
 - imagens fade out change to other imagens
-- Form
+- Form (popup change)
+- Added SlideShow
+- improve presentation the website
+- Added JavaScript file
